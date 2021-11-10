@@ -1,8 +1,10 @@
 package com.cg.spring.core.demo;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.cg.spring.core.demo.model.Department;
 import com.cg.spring.core.demo.model.Employee;
 
 /*
@@ -20,10 +22,35 @@ public class App {
 		
 	//	Employee emp = new Employee(101,"sonu",10.7);
 		
-		Employee emp = ctx.getBean(Employee.class);
-		
+		Employee emp = ctx.getBean("employee",Employee.class);
 		System.out.println(emp.toString());
 		
+		Employee emp2 = ctx.getBean("employee1",Employee.class);
+		System.out.println(emp2.toString());
+
+		Employee emp3 = ctx.getBean("employee2", Employee.class);
+		System.out.println(emp3.toString());
+		
+		// COLLECTION INJECTION
+		Department dept = ctx.getBean("department",Department.class);     // setter or property injection
+		System.out.println(dept.toString());
+		
+		Department dept1 = ctx.getBean("department1",Department.class);   // constructor injection
+		System.out.println(dept1.toString());
+		
+		// INNER Beans
+		
+		Employee emp4 = ctx.getBean("employee3", Employee.class);
+		System.out.println(emp4.toString());
+
+		
+		((AbstractApplicationContext) ctx).close();
 		System.out.println("End");
+		
+		
+		
 	}
 }
+
+
+

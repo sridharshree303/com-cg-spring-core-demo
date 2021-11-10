@@ -1,0 +1,23 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<!-- Dependency injection -->
+
+	<!-- Property injection / setter injection -->
+
+	<bean id="employee" class="com.cg.spring.core.demo.model.Employee">
+		<property name="eid">
+			<value>101</value>
+		</property>
+		<property name="firstName">
+			<value>Sonu</value>
+		</property>
+		<property name="salary">
+			<value>10.6</value>
+		</property>
+	</bean>
+
+</beans>

@@ -18,8 +18,24 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
+	
+   
+	
 
   <dependencies>
+
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.2.10.RELEASE</version>
+  </dependency>
+  
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.2.10.RELEASE</version>
+    </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
@@ -32,6 +48,7 @@
       <version>5.7.1</version>
       <scope>test</scope>
     </dependency>
+    
   </dependencies>
 
   <build>

@@ -33,12 +33,14 @@
 	</bean>
 	
 	<!--  Constructor Injection -->
+	
 	<bean id ="employee2" class="com.cg.spring.core.demo.model.Employee">
 		<constructor-arg value="103" type="int"></constructor-arg>
 		<constructor-arg value="Tonu" type="java.lang.String"></constructor-arg>
 		<constructor-arg value="12.5" type="double"></constructor-arg>
 	</bean>
 	
+	<!--  Collection Injection -->
 	<bean id ="department" class ="com.cg.spring.core.demo.model.Department">
 		<property name="id">
 			<value>1001</value>

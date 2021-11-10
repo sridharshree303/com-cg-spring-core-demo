@@ -1,7 +1,7 @@
 package com.cg.spring.core.demo;
 
 /*
- * @author Vaman deshmukh 
+ * @author Vaman deshmukh spring project 
  * @Hello world program
  *  
  */

@@ -100,6 +100,19 @@
 		</property>
 	</bean>
 	
+	<!-- autowiring -->
+	<bean id="employee5" class="com.cg.spring.core.demo.model.Employee" autowire="byName">
+		<property name="eid">
+			<value>105</value>
+		</property>
+		<property name="firstName">
+			<value>Sridhar</value>
+		</property>
+		<property name="salary">
+			<value>22.0</value>
+		</property>
+	</bean>
+	
 
 </beans>
 

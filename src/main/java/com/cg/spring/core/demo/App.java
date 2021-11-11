@@ -42,7 +42,7 @@ public class App {
 		
 		Employee emp4 = ctx.getBean("employee3", Employee.class);
 		System.out.println(emp4.toString());
-		
+		// Autowire
 		Employee emp5 = ctx.getBean("employee5", Employee.class);
 		System.out.println(emp5.toString());
 
